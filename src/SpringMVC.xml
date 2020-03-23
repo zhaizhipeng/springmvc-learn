@@ -33,4 +33,37 @@
     <!-- 引用自定义类型转换器 -->
     <mvc:annotation-driven conversion-service="converterService"></mvc:annotation-driven>
 
+    <!-- 配置自定义异常处理器 -->
+    <bean id="handlerExceptionResolver" class="com.ysdrzp.exception.CustomExceptionResolver"/>
+
+    <!-- 配置拦截器 -->
+    <!--<mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean id="myIntercepter" class="com.ysdrzp.interceptor.MyInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>-->
+
+    <!-- 配置拦截器的作用范围 -->
+    <!--<mvc:interceptors>
+        <mvc:interceptor>
+            &lt;!&ndash; 用于指定对拦截的 url &ndash;&gt;
+            <mvc:mapping path="/**" />
+            <bean id="firstInterceptor" class="com.ysdrzp.interceptor.FirstInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            &lt;!&ndash; 用于指定对拦截的 url &ndash;&gt;
+            <mvc:mapping path="/**" />
+            <bean id="secondInterceptor" class="com.ysdrzp.interceptor.SecondInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>-->
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!-- 用于指定对拦截的 url -->
+            <mvc:mapping path="/**" />
+            <bean id="loginInterceptor" class="com.ysdrzp.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>

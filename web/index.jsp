@@ -105,9 +105,13 @@
     <a href="session/testGet">取出 SessionAttribute</a>
     <hr/>
     <a href="session/testClean">清除 SessionAttribute</a>
-
+    <hr/>
     <!-- 测试响应 json -->
     <a href="json/testResponseJson">测试响应 json</a>
+    <hr/>
+    <a href="test/testException">测试自定义异常</a>
+    <hr/>
+    <a href="test/testIntercepter">测试自定义拦截器</a>
 
   </body>
 </html>
