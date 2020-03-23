@@ -105,5 +105,9 @@
     <a href="session/testGet">取出 SessionAttribute</a>
     <hr/>
     <a href="session/testClean">清除 SessionAttribute</a>
+
+    <!-- 测试响应 json -->
+    <a href="json/testResponseJson">测试响应 json</a>
+
   </body>
 </html>
